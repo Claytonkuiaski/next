@@ -1,0 +1,90 @@
+body
+	font-family: varela round
+
+	.faixa
+		position: absolute
+		width: 100%
+		height: 110px
+		background-color: $cinza
+		border-bottom: solid 1px
+		box-shadow: 5px 3px 20px
+		+opacity(.7)
+	.menu
+		+make-sm-column(7)
+		ul 
+			margin-top: 40px
+			display: flex
+			list-style: none
+			li 
+				padding-right: 0px
+				padding-left: 0px
+				+transition(.2s)
+				&:hover
+					background-color: $azul
+				a
+					padding-left: 30px
+					padding-right: 30px
+					text-decoration: none
+					color: $branco
+					font-size: 20px
+					+transition(.3s)
+		+breakpoint($tablet)
+			display: none		
+
+	.toggle
+		margin-top: 40px
+		position: relative
+		float: right
+		a 
+			text-decoration: none
+		i 
+			display: none
+			color: $branco
+			font-size: 30px
+			+transition(.2s)
+			&:hover
+				color: $azul
+			+breakpoint($tablet)
+				display: block
+			+breakpoint($celubot)
+				margin-top: -200px
+
+	.logo
+		+make-sm-column(5)
+		img
+			width: 200px	
+	.menu-responsivo
+		z-index: 99999
+		position: fixed
+		width: 100%
+		height: 0
+		left: 0
+		top: -160px
+		+transition(.2s)
+		&.ativo 
+			top: 0
+		
+		ul 
+			margin-top: 0px
+			margin-left: -50px
+			list-style: none
+			text-align: center
+			background-color: $cinza-claro
+			li 
+				a
+					padding: 10px
+					display: block
+					color: $branco
+					border-bottom: solid 1px $branco
+					+transition(.2s)
+					&:hover,
+					&:focus
+						text-decoration: none
+						background-color: $cinza
+						color: $azul
+
+	.layout
+		+transition(.2s)
+		&.ativo 
+			padding-top: 160px					
+

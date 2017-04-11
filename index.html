@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Next Produções</title>
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/home.css">
+	 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</hea1d>
+<body>
+	<div class="menu-responsivo">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Empresa</a></li>
+			<li><a href="#">Eventos</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</div>
+	<div class="layout">
+		<header>
+			<div class="faixa"></div>
+			<div class="container">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" alt="logotipo"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Empresa</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
+				<div class="toggle">
+					<a href="#"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+		</header>
+		<div class="home">
+			<div class="container">
+				<h1>VENHA PARA A <span>NEXT!</span></h1>
+			</div>
+		</div>
+		<div class="qualidade">
+			<div class="container">
+				<h2>Qualidade</h2>
+				<h3>Produção / Equipamentos / Satisfação do cliente </h3>
+				<a href="">ORÇAMENTO</a>
+			</div>
+		</div>		
+		<div class="eventos-home">
+			<div class="container">
+				<h2>Eventos</h2>
+			</div>
+		</div>
+		<div class="slide">
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="img/evento1.jpg" alt="evento"></div>
+            <div class="item"><img src="img/evento2.jpg" alt="evento"></div>
+            <div class="item"><img src="img/evento3.jpg" alt="evento"></div>
+            <div class="item"><img src="img/evento4.jpg" alt="evento"></div>   
+          </div>
+        </div>
+      	<div class="logo-inferior"></div>
+		<footer>
+			<div class="container">
+				<div class="footer">
+					<div class="mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.8116004257336!2d-50.24808408500915!3d-24.24836728434628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE0JzU0LjEiUyA1MMKwMTQnNDUuMiJX!5e0!3m2!1spt-BR!2sus!4v1491938652980" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="endereco">
+						<h2>Next Produções</h2>
+						<h3>Rua Jandira Gonsalves 88<br>Ventania - PR</h3>
+						<h4><i class="whats fa fa-whatsapp" aria-hidden="true"></i> (41) 9 9992-7025</h4>
+						<h4><i class="mail fa fa-envelope-o" aria-hidden="true"></i> E-mail - nexteventospg@gmail.com</h4>
+					</div>
+					<div class="social">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnextproducoesjc&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					</div>
+					<div class="menu-inferior">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Empresa</a></li>
+							<li><a href="#">Eventos</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="barra-inferior">
+				<div class="container">
+					<h2>Desenvolvido por<a href="https://www.facebook.com/developerClayton" target="blank"> Friendship</a></h2>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){				
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+		</script>
+
+		<script>$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 100,
+      paginationSpeed : 300,
+      singleItem:true,
+      autoPlay: true,
+      pagination: false
+      
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : true,
+      // itemsDesktopSmall : true,
+      // itemsTablet: true,
+      // itemsMobile : true
+ 
+  });
+ 
+});
+	</script>
+  <script src="bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
+</body>
+</html>

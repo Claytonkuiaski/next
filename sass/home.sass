@@ -1,0 +1,83 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+.home
+	margin-top: -220px
+	min-height: 700px
+	background:
+		image: url('../img/fundo-home.jpg') 
+		repeat: no-repeat
+		position: top center
+		size: cover
+		width: 100%
+		height: 100%	
+		attachment: fixed 
+	+breakpoint($celubot)	
+		margin-top: -300px
+	h1 
+		margin-top: 380px
+		text-shadow: 2px -2px 10px $preto 
+		text-align: center
+		font-size: 50px
+		color: $branco	
+		span 
+			font-size: 100px
+			font-style: italic
+.qualidade
+	text-align: center
+	margin-top: -20px
+	background-color: $cinza
+	height: 330px	
+	h2 
+		margin-top: 50px
+		color: $branco	
+		text-transform: uppercase
+		font-size: 40px
+		font-weight: bold
+	h3 
+		color: $branco	
+		margin-bottom: 80px
+	a
+		color: $branco	
+		font-size: 30px
+		border: solid 2px
+		padding-left: 50px
+		padding-right: 50px
+		padding-top: 8px
+		padding-bottom: 8px
+		border-radius: 30px
+		+transition(.1s)
+		&:hover
+			background-color: $branco 
+			text-decoration: none
+			color: $azul
+			border: none
+			font-weight: bold
+.eventos-home
+	h2 
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 50px
+		font-style: italic
+		margin-top: 150px
+		margin-bottom: 50px
+.slide 
+	img 
+		width: 100%
+.logo-inferior
+	min-height: 200px
+	background:
+		image: url('../img/fundo-home-2.png') 
+		repeat: no-repeat
+		position: top center	
+		width: 800px
+		attachment: fixed
+
+
+
+
+		
+	
