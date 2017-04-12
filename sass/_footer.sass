@@ -2,11 +2,13 @@ footer
 	margin-top: 0px
 	background-color: $cinza-claro
 	width: 100%
-	height: 770px
+	height: 800px
+	+breakpoint($tablet)
+		margin-top: -70px
 	+breakpoint($celubot)
-		height: 1200px
+		height: 1250px
 	+breakpoint($celular)
-		height: 1240px	
+		height: 1310px	
 
 	.mapa 
 		+make-sm-column(6)
