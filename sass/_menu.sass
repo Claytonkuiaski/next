@@ -11,19 +11,25 @@ body
 		+opacity(.7)
 	.menu
 		+make-sm-column(7)
+		display: block
 		ul 
-			margin-top: 40px
+			margin-top: 0px
 			display: flex
 			list-style: none
 			li 
 				padding-right: 0px
 				padding-left: 0px
+				padding-top: 40px
+				padding-bottom: 42px
 				+transition(.2s)
 				&:hover
 					background-color: $azul
+					padding-bottom: 60px
 				a
 					padding-left: 30px
 					padding-right: 30px
+					padding-bottom: 42px
+					padding-top: 40px
 					text-decoration: none
 					color: $branco
 					font-size: 20px
@@ -32,7 +38,7 @@ body
 			display: none		
 
 	.toggle
-		margin-top: 40px
+		margin-top: 30px
 		position: relative
 		float: right
 		a 
@@ -40,7 +46,7 @@ body
 		i 
 			display: none
 			color: $branco
-			font-size: 30px
+			font-size: 50px
 			+transition(.2s)
 			&:hover
 				color: $azul
@@ -48,6 +54,9 @@ body
 				display: block
 			+breakpoint($celubot)
 				margin-top: -200px
+			+breakpoint($celular)
+				margin-top: -190px
+				font-size: 30px	
 
 	.logo
 		+make-sm-column(5)
@@ -59,7 +68,7 @@ body
 		width: 100%
 		height: 0
 		left: 0
-		top: -160px
+		top: -225px
 		+transition(.2s)
 		&.ativo 
 			top: 0
@@ -72,6 +81,7 @@ body
 			background-color: $cinza-claro
 			li 
 				a
+					font-size: 25px
 					padding: 10px
 					display: block
 					color: $branco
@@ -86,5 +96,5 @@ body
 	.layout
 		+transition(.2s)
 		&.ativo 
-			padding-top: 160px					
+			padding-top: 225px					
 

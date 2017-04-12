@@ -2,9 +2,11 @@ footer
 	margin-top: 0px
 	background-color: $cinza-claro
 	width: 100%
-	height: 750px
+	height: 770px
 	+breakpoint($celubot)
 		height: 1200px
+	+breakpoint($celular)
+		height: 1240px	
 
 	.mapa 
 		+make-sm-column(6)
@@ -17,7 +19,7 @@ footer
 	.endereco	
 		+make-sm-column(6)
 		text-align: center
-		margin-top: 120px
+		margin-top: 260px
 		h2 
 			color: $branco	
 			text-shadow: 5px 2px 10px $preto
@@ -31,6 +33,10 @@ footer
 				color: $verde
 			.mail
 				color: $branco	
+		+breakpoint($tablet)
+			margin-top: 240px
+		+breakpoint($celubot)
+			margin-top: 120px			
 	.social
 		+make-sm-column(12)
 		margin-top: 30px
@@ -61,6 +67,8 @@ footer
 					+transition(.1s)
 					&:hover
 						color: $azul
+		+breakpoint($tablet)
+			margin-top: -20px				
 		+breakpoint($celubot)	
 			float: none
 			margin-top: 80px
