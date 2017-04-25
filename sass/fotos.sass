@@ -1,0 +1,38 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
+h1 
+	margin-top: 50px
+	color: $cinza
+	text-transform: uppercase
+	font-size: 30px
+
+.fotos1,
+.fotos2,
+.fotos3 
+	margin-top: 20px
+	+make-sm-column(4)
+	img
+		margin: 0 auto
+		border: solid 5px $preto
+		margin-bottom: 50px
+		+img-responsive
+		+transition(.2s)
+		&:hover
+			border: solid 5px $azul
+
+.logo-inferior2 
+	img 
+		float: right
+		position: relative
+		width: 150px
+	display: none		
+	+breakpoint($tablet)
+		display: block
+			
+		
+
+	

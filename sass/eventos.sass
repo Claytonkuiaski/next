@@ -1,0 +1,74 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+main
+	margin-top: -200px
+	min-height: 1700px
+	background:
+		image: url('../img/fundo-eventos.jpg') 
+		repeat: no-repeat
+		position: top center
+		size: cover
+		width: 100%
+		height: 100%
+		attachment: fixed
+	+breakpoint($celubot)
+		margin-top: -250px	
+		padding-bottom: 150px
+	.eventos
+		padding-top: 240px	
+		h1 
+			color: $branco
+			text-transform: uppercase
+			font-size: 30px
+		.galeria
+			+make-sm-column(6)
+			+transition(.2s)			
+			a	 
+				p
+					position: absolute
+					top: 40px
+					display: none
+					font-size: 40px
+					+transition(.2s)
+					&:hover
+						display: block
+					span 
+						color: $branco
+						padding: 10px	
+						text-shadow: 2px 2px 2px $azul
+						+transition(.2s)
+			img 
+				padding-top: 40px
+				+transition(.2s)
+				+img-responsive	
+			+transition(.2s)		
+			&:hover 
+				img
+					opacity: 0.3
+				p 
+					display: block	
+	.proximos-eventos
+		margin-top: 150px
+		h2 
+			color: $branco
+			text-transform: uppercase
+			font-size: 30px
+		.galeria 
+			+make-sm-column(6)	
+			img 
+				padding-top: 40px
+				+img-responsive
+
+
+.logo-inferior2 
+	img 
+		float: right
+		position: relative
+		width: 150px
+	display: none		
+	+breakpoint($tablet)
+		display: block
+		margin-top: -80px
