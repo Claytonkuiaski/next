@@ -21,7 +21,7 @@ $Mailer->IsSMTP();
 $Mailer->Host = 'smtp.gmail.com';
 $Mailer->SMTPAuth = true;
 $Mailer->Username = "clayton.kuiaski@gmail.com";
-$Mailer->Password = "mogui123";
+$Mailer->Password = "****************";
 $Mailer->SMTPSecure = "tls";
 $Mailer->Port = 587;
 $Mailer->FronName = "{$Nome}";

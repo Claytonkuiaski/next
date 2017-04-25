@@ -19,7 +19,7 @@ $mail->SMTPAuth = true;                         //Usa autenticação SMTP? (opci
 $mail->SMTPSecure = 'tls';
 $mail->port     = 587;
 $mail->Username = 'claytonkuiaski@hotmail.com'; //Usuário do Servidor SMTP
-$mail->Password = 'gordinhogostoso1';           //Senha do servidor SMTP
+$mail->Password = '*******************';           //Senha do servidor SMTP
 
 //define o remetente
 $mail->Fron     = "claytonkuiaski@hotmail.com"; //seu e-mail
